@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+
+    <style>
+        .div_grafico {
+            width: 90%;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="div_grafico">
+
+        <canvas id="myChart"></canvas>
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    
+    var ctx = document.getElementById('myChart');
+
+    var meuGrafico = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["dom", "seg", "ter", "qua", "qui", "sex", "sab"],
+            datasets: [
+                {
+                    label: "Máxima",
+                    data: [20, 24, 26, 28, 28, 25, 23],
+                    borderColor: 'black',
+                    borderWidth: 5,
+                    pointStyle: 'circle',
+                    radius: 5,
+                    pointBorderColor: ['darkblue', 'yellow', 'orangered', 'red', 'red', 'orange', 'blue'],
+                    pointBackgroundColor: ['darkblue', 'yellow', 'orangered', 'red', 'red', 'orange', 'blue'],
+                },
+
+                {
+                    type: 'line',
+                    label: "Mínima",
+                    data: [15,16,16,17,17,17,16],
+                    borderColor: 'darkblue',
+                    borderWidth: 5,
+                    pointStyle: 'circle',
+                    radius: 5,
+                    pointBorderColor: ['cyan', 'gray', 'gray', 'blue', 'blue', 'blue', 'gray'],
+                    pointBackgroundColor: ['cyan', 'gray', 'gray', 'blue', 'blue', 'blue', 'gray'],
+                }
+            ]
+        },
+
+        options: {
+            
+            title: {
+                display: true,
+                fontSize: 20,
+                text: "Previsão do tempo",
+                position: 'top',
+            },
+            legend: {
+                display: true,
+                reverse: true,
+                position: 'top',
+            }
+        }
+    })
+
+    Chart.defaults.global.defaultFontColor = 'cadetblue';
+
+</script>

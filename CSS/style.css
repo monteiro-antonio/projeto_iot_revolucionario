@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    background-color: #232323;
+    color: white;
+    overflow: auto;
+    border-bottom: 3px solid orangered;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.navbar {
+    list-style: none;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.destaque {
+    color: orangered;
+}
+
+a:hover  {
+    text-shadow: 3px 1px 1px rgb(0, 0, 0);
+    transition: 0.1s;
+    color: orangered;
+}
+
+
+.titulo {
+    margin: 0;
+    float: left;
+    padding-top: 5px;
+}
+
+
+.header .navbar li {
+    float: left;
+    margin-left: 13px;
+    text-transform: uppercase;
+}
+
+.banner {
+    text-align: center;
+    background-color: palevioletred;
+    background-image: url(../imgs/banner-fundo-big.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 50px;
+    padding-top: 150px;
+}
+
+.banner h3 {
+    color: #555555;
+}
+
+
+.saiba-mais button {
+    border: 0;
+    background-color: orangered;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-top: 30px;
+}
+
+.saiba-mais {
+    text-align: center;
+    background-color:#232323;
+    height: 90px;
+}
+
+
+.box img {
+    height: 100px
+}
+
+.box {
+    overflow: auto;
+} 
+
+.box-item {
+    float: left;
+    text-align: center;
+    width: 27%;
+    padding: 3%;
+}
+
+
+.footer {
+    text-align: center;
+    background-color: orangered;
+    height: 90px;
+}
+
+.footer h4 {
+    margin: 0;
+    padding-top: 40px;
+    font-weight: 100;
+    color: white;
+}
+
+.pag-login {
+    background-color: #ecf0f1;
+    padding: 50px 0;
+}
+
+.box-login {
+    background-color: white;
+    width: 40%;
+    margin:auto;
+    box-shadow: 3px 3px 5px 2px #ccc;
+    padding: 60px 20px 0 20px;
+    border-radius: 20px;
+}
+
+.pag-login h1 {
+    margin: 0;
+    text-align:center;
+    margin-bottom: 40px;
+}
+
+
+.extra {
+    height: 50px;
+}
+
+.pag-login input {
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+
+.pag-login button {
+    color: white;
+    background-color: green;
+    margin: 20px 0 50px 0;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
